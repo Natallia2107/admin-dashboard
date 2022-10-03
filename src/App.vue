@@ -55,7 +55,7 @@ import Header from './components/Header.vue';
   export default {
     data: () => ({
         cards: ["Today", "Yesterday"],
-        drawer: null,
+        drawer: true,
         
     }),
     components: { Sidebar, Header }
