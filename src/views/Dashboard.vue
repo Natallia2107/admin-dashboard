@@ -46,6 +46,13 @@ export default {
 	name: 'Dashboard',
 	data() {
 		return {
+			text: [
+				{ title: 'Lorem 5', subtitle: 'Lorem ipsum dolor sit amet.' },
+				{ title: 'Lorem 40', subtitle: 'Lorem, ipsum dolor.' },
+				{ title: 'Lorem 18', subtitle: 'Lorem ipsum dolor sit amet cons.' },
+				{ title: 'Lorem 68', subtitle: 'Lorem ipsum dolor consectetur.' },
+				{ title: 'Lorem 21', subtitle: 'Lorem ipsum, dolor sit amet consectetur adipisicing.' },
+			],
 			activities: [
 				{ title: 'Lorem, ipsum', color: 'red', amounts: 2107 },
 				{ title: 'Lorem, dolor', color: 'teal', amounts: 1307 },
@@ -53,13 +60,6 @@ export default {
 				{ title: 'Lorem, sit', color: 'indigo', amounts: 2808 },
 				{ title: 'Lorem, ipsum', color: 'teal', amounts: 28 },
 				{ title: 'Lorem, amet', color: 'red', amounts: 31 },
-			],
-			text: [
-				{ title: 'Lorem 5', subtitle: 'Lorem ipsum dolor sit amet.' },
-				{ title: 'Lorem 40', subtitle: 'Lorem, ipsum dolor.' },
-				{ title: 'Lorem 18', subtitle: 'Lorem ipsum dolor sit amet cons.' },
-				{ title: 'Lorem 68', subtitle: 'Lorem ipsum dolor consectetur.' },
-				{ title: 'Lorem 21', subtitle: 'Lorem ipsum, dolor sit amet consectetur adipisicing.' },
 			],
 		}
 	},
