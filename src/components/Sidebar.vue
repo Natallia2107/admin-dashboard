@@ -36,11 +36,10 @@ export default {
 		return {
 			links: [
 				['mdi-home-analytics', 'Dashboard', '/'],
-				['mdi-account', 'Profile', '/about'],
-				['mdi-emoticon', 'Icons', '/icon'],
-				['mdi-email', 'Message','dupa1'],
-				['mdi-help-circle', 'Help', 'dupa2'],
-				['mdi-cog', 'Settings', 'dupa3'],
+				['mdi-account', 'Profile', '/profile'],
+				['mdi-chart-bar', 'Diagrams', '/diagram'],
+				['mdi-help-circle', 'Help', '/help'],
+				['mdi-cog', 'Settings', '/settings'],
 			],
 		}
 	},
