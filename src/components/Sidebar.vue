@@ -13,15 +13,17 @@
 		<v-divider></v-divider>
 
 		<v-list>
-			<v-list-item v-for="[icon, text] in links" :key="icon" link>
-				<v-list-item-icon>
-					<v-icon>{{ icon }}</v-icon>
-				</v-list-item-icon>
-
-				<v-list-item-content>
-					<v-list-item-title>{{ text }}</v-list-item-title>
-				</v-list-item-content>
-			</v-list-item>
+			<router-link v-for="[icon, text, path] in links" :key="icon" :to="path" >
+				<v-list-item  link>
+					<v-list-item-icon>
+						<v-icon>{{ icon }}</v-icon>
+					</v-list-item-icon>
+	
+					<v-list-item-content>
+						<v-list-item-title>{{ text }}</v-list-item-title>
+					</v-list-item-content>
+				</v-list-item>
+			</router-link>
 		</v-list>
 	</v-navigation-drawer>
 </template>
@@ -33,12 +35,12 @@ export default {
 	data() {
 		return {
 			links: [
-				['mdi-home-analytics', 'Dashboard'],
-				['mdi-account', 'Profile'],
-				['mdi-list-box', 'Top List'],
-				['mdi-email', 'Message'],
-				['mdi-help-circle', 'Help'],
-				['mdi-cog', 'Settings'],
+				['mdi-home-analytics', 'Dashboard', '/'],
+				['mdi-account', 'Profile', '/about'],
+				['mdi-emoticon', 'Icons', '/icon'],
+				['mdi-email', 'Message','dupa1'],
+				['mdi-help-circle', 'Help', 'dupa2'],
+				['mdi-cog', 'Settings', 'dupa3'],
 			],
 		}
 	},
