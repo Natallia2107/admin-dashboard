@@ -1,12 +1,12 @@
 <template>
 	<v-navigation-drawer v-model="drawer" app>
-		<v-sheet color="#e77e22" class="pa-4">
+		<v-sheet color="grey lighten-4" class="pa-4">
 			<div class="text-center">
 				<v-avatar class="mb-4" size="64"
 					><v-img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"
 				/></v-avatar>
 
-				<h2 class="white--text">Admin Panel</h2>
+				<h2 class="black--text">Admin Panel</h2>
 			</div>
 		</v-sheet>
 
