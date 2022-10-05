@@ -5,7 +5,7 @@ Vue.use(VueRouter)
 
 const routes = [
 	{
-		path: '/login',
+		path: '/',
 		name: 'Login',
 		component: () => import(`./../templates/LoginTemplate`),
 	},
@@ -14,7 +14,7 @@ const routes = [
 		component: () => import(`./../templates/DashboardTemplate`),
 		children: [
 			{
-				path: '/',
+				path: '/dashboard',
 				name: 'Dashboard',
 				component: () => import(`./../views/Dashboard`),
 			},

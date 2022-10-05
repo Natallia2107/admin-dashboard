@@ -72,7 +72,7 @@
 					</v-list-item-title>
 				</v-list-item>
 
-				<v-list-item to="/login">
+				<v-list-item to="/">
 					<v-list-item-icon>
 						<v-icon>mdi-logout</v-icon>
 					</v-list-item-icon>

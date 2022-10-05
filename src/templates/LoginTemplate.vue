@@ -42,7 +42,7 @@
 									</v-card-text>
 									<v-card-actions>
 										<v-spacer></v-spacer>
-										<v-btn color="color" to="/">Login</v-btn>
+										<v-btn color="color" to="/dashboard">Login</v-btn>
 									</v-card-actions>
 								</v-card>
 							</v-tab-item>
@@ -91,7 +91,7 @@
 									</v-card-text>
 									<v-card-actions>
 										<v-spacer></v-spacer>
-										<v-btn class="color" to="/">Sign Up</v-btn>
+										<v-btn class="color" to="/dashboard">Sign Up</v-btn>
 									</v-card-actions>
 								</v-card>
 							</v-tab-item>

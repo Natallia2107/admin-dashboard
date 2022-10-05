@@ -34,7 +34,7 @@ export default {
 	data() {
 		return {
 			links: [
-				['mdi-home-analytics', 'Dashboard', '/'],
+				['mdi-home-analytics', 'Dashboard', '/dashboard'],
 				['mdi-account', 'Profile', '/profile'],
 				['mdi-chart-bar', 'Diagrams', '/diagram'],
 				['mdi-bell', 'Notification', '/notification'],
