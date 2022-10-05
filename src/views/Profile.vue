@@ -46,7 +46,7 @@
 									<v-textarea
 										class="purple-input"
 										label="About Me"
-										value="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+										value="Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nam ab unde in quam accusamus laudantium ad aliquam officiis? Molestias pariatur sit dolorem delectus vitae est quas cum voluptatum laudantium!"
 									/>
 								</v-col>
 

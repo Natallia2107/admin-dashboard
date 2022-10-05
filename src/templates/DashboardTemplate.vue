@@ -22,3 +22,4 @@ export default {
 	components: { Sidebar, Header },
 }
 </script>
+

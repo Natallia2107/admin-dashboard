@@ -1,5 +1,5 @@
 <template>
-	<v-content>
+	<v-content class="font-family">
 		<v-container fluid class="height-center">
 			<v-layout align-center class="justify-center">
 				<v-flex xs12 sm8 md6>
@@ -9,12 +9,12 @@
 
 							<v-tab href="#tab-1"
 								>Login
-								<v-icon>mdi-account</v-icon>
+								<v-icon class="color">mdi-account</v-icon>
 							</v-tab>
 
 							<v-tab href="#tab-2"
 								>Sign Up
-								<v-icon>mdi-account-plus</v-icon>
+								<v-icon class="color">mdi-account-plus</v-icon>
 							</v-tab>
 						</v-tabs>
 
@@ -41,7 +41,7 @@
 									</v-card-text>
 									<v-card-actions>
 										<v-spacer></v-spacer>
-										<v-btn color="green" to="/">Login</v-btn>
+										<v-btn color="color" to="/">Login</v-btn>
 									</v-card-actions>
 								</v-card>
 							</v-tab-item>
@@ -89,7 +89,7 @@
 									</v-card-text>
 									<v-card-actions>
 										<v-spacer></v-spacer>
-										<v-btn color="green" dark to="/">Sign Up</v-btn>
+										<v-btn class="color" to="/">Sign Up</v-btn>
 									</v-card-actions>
 								</v-card>
 							</v-tab-item>
@@ -115,6 +115,9 @@ export default {
 </script>
 
 <style scoped>
+.font-family {
+	font-family: 'Roboto', sans-serif;
+}
 .height-center {
 	display: flex;
 	height: 100vh;
@@ -122,5 +125,8 @@ export default {
 }
 .justify-center {
 	justify-content: center;
+}
+.color {
+	color: green;
 }
 </style>
