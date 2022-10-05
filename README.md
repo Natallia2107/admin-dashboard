@@ -1,24 +1,25 @@
-# admin-dashboard
 
-## Project setup
-```
-npm install
-```
+## Admin dashboard
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### Wymagania
 
-### Compiles and minifies for production
-```
-npm run build
-```
+* node.js (16.x)
+* npm (8.x)
 
-### Lints and fixes files
-```
-npm run lint
-```
+### Instalacja i uruchamianie
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
+1. Klonujemy repozytorium
+
+   ```sh
+   git clone https://github.com/Natallia2107/admin-dashboard.git
+   ```
+3. Przechodzimy do folderu z repozytorium i instalujemy moduły NPM
+   ```sh
+   npm install
+   ```
+4. Uruchamiamy serwer HTTP
+   ```sh
+   npm run server
+   ```
+5. Serwer zostanie uruchomiony na wolnym porcie, prawdopodobnie 8080. W konsoli wyświetli się adres wraz z portem, uruchamiamy adres w przeglądarce :relaxed:
