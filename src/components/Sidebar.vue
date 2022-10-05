@@ -12,7 +12,7 @@
 		<v-divider></v-divider>
 
 		<v-list>
-			<router-link v-for="[icon, text, path] in links" :key="icon" :to="path">
+			<router-link class="text-decoration-none" v-for="[icon, text, path] in links" :key="icon" :to="path">
 				<v-list-item link>
 					<v-list-item-icon>
 						<v-icon>{{ icon }}</v-icon>
@@ -37,8 +37,7 @@ export default {
 				['mdi-home-analytics', 'Dashboard', '/'],
 				['mdi-account', 'Profile', '/profile'],
 				['mdi-chart-bar', 'Diagrams', '/diagram'],
-				['mdi-help-circle', 'Help', '/help'],
-				['mdi-cog', 'Settings', '/settings'],
+				['mdi-bell', 'Notification', '/notification'],
 			],
 		}
 	},

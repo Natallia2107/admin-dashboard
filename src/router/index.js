@@ -29,14 +29,9 @@ const routes = [
 				component: () => import(`./../views/Diagram`),
 			},
 			{
-				path: '/help',
+				path: '/notification',
 				name: 'About',
-				component: () => import(`./../views/Help`),
-			},
-			{
-				path: '/settings',
-				name: 'About',
-				component: () => import(`./../views/Settings`),
+				component: () => import(`./../views/Notification`),
 			},
 		],
 	},

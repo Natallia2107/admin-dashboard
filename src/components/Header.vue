@@ -56,6 +56,13 @@
 					</v-list-item-content>
 				</v-list-item>
 				<v-divider />
+				<v-list-item to="/profile">
+					<v-list-item-icon>
+						<v-icon>mdi-account</v-icon>
+					</v-list-item-icon>
+					<v-list-item-title> Profile </v-list-item-title>
+				</v-list-item>
+
 				<v-list-item link v-for="(menu, index) in menus" :key="index">
 					<v-list-item-icon>
 						<v-icon>{{ menu.icon }}</v-icon>
@@ -64,6 +71,14 @@
 						{{ menu.title }}
 					</v-list-item-title>
 				</v-list-item>
+				
+				<v-list-item to="/login">
+					<v-list-item-icon>
+						<v-icon>mdi-logout</v-icon>
+					</v-list-item-icon>
+					<v-list-item-title> Logout </v-list-item-title>
+				</v-list-item>
+				
 			</v-list>
 		</v-menu>
 	</v-app-bar>
@@ -76,10 +91,8 @@ export default {
 	data() {
 		return {
 			menus: [
-				{ title: 'Profile', icon: 'mdi-account' },
 				{ title: 'Change Password', icon: 'mdi-key' },
-				{ title: 'Setting', icon: 'mdi-cog' },
-				{ title: 'Logout', icon: 'mdi-logout' },
+				{ title: 'Settings', icon: 'mdi-cog' },
 			],
 			items: [
 				{ header: 'Today' },
@@ -87,20 +100,20 @@ export default {
 					avatar: 'https://cdn.vuetifyjs.com/images/lists/5.jpg',
 					title: 'Recipe to try',
 					subtitle:
-						'<span class="text--primary">Britta Holt</span> &mdash; We should eat this: Grate, Squash, Corn, and tomatillo Tacos.',
+						'<span class="text--primary">Britta Holt</span> &mdash; Lorem ipsum dolor sit, amet consectetur adipisicing elit.',
 				},
 				{ divider: true, inset: true },
 				{
 					avatar: 'https://cdn.vuetifyjs.com/images/lists/4.jpg',
 					title: 'Birthday gift',
 					subtitle:
-						'<span class="text--primary">Trevor Hansen</span> &mdash; Have any ideas about what we should get Heidi for her birthday?',
+						'<span class="text--primary">Trevor Hansen</span> &mdash; Lorem ipsum dolor sit, amet consectetur adipisicing elit.',
 				},
 				{ divider: true, inset: true },
 				{
 					avatar: 'https://cdn.vuetifyjs.com/images/lists/2.jpg',
 					title: 'Summer BBQ <span class="grey--text text--lighten-1">4</span>',
-					subtitle: `<span class="text--primary">to Alex, Scott, Jennifer</span> &mdash; Wish I could come, but I'm out of town this weekend.`,
+					subtitle: `<span class="text--primary">to Alex, Scott, Jennifer</span> &mdash; Lorem ipsum dolor sit, amet consectetur adipisicing elit.`,
 				},
 				{ divider: true, inset: true },
 			],
