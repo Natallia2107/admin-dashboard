@@ -73,7 +73,7 @@
 					</v-sheet>
 
 					<v-card-text class="text-center">
-						<h4 class="display-2 font-weight-light mb-3 black--text">Name Surname</h4>
+						<h4 class="display-2 font-weight-light mb-3 black--text">{{ login }}</h4>
 
 						<p class="font-weight-light grey--text">
 							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, mollitia tenetur! Atque enim
@@ -87,9 +87,15 @@
 </template>
 
 <script>
+	import store from './../store'
 export default {
 	// eslint-disable-next-line vue/multi-word-component-names
 	name: 'Profile',
+	computed: {
+		login() {
+			return store.state.login
+		},
+	},
 }
 </script>
 

@@ -29,6 +29,7 @@
 												name="username_login"
 												prepend-icon="mdi-account"
 												type="text"
+												@input="setLogin($event)"
 											></v-text-field>
 											<v-text-field
 												id="password_login"
@@ -56,6 +57,7 @@
 												name="username"
 												prepend-icon="mdi-account"
 												type="text"
+												@input="setLogin($event)"
 											></v-text-field>
 											<v-text-field
 												id="name"
@@ -102,6 +104,7 @@
 </template>
 
 <script>
+import store from './../store'
 export default {
 	// eslint-disable-next-line vue/multi-word-component-names
 	name: 'Login',
@@ -110,6 +113,16 @@ export default {
 			tab: null,
 			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
 		}
+	},
+	methods: {
+		setLogin(login) {
+			store.commit('setLogin', login)
+		},
+	},
+	computed: {
+		login() {
+			return store.state.login
+		},
 	},
 }
 </script>

@@ -41,7 +41,7 @@
 								<v-img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" />
 							</v-avatar>
 						</v-badge>
-						<span class="ml-3">Name Surname</span>
+						<span class="ml-3">{{ login }}</span>
 					</v-chip>
 				</span>
 			</template>
@@ -51,7 +51,7 @@
 						<img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" />
 					</v-list-item-avatar>
 					<v-list-item-content>
-						<v-list-item-title>Name Surname</v-list-item-title>
+						<v-list-item-title>{{ login }}</v-list-item-title>
 						<v-list-item-subtitle>Logged In</v-list-item-subtitle>
 					</v-list-item-content>
 				</v-list-item>
@@ -71,20 +71,20 @@
 						{{ menu.title }}
 					</v-list-item-title>
 				</v-list-item>
-				
+
 				<v-list-item to="/login">
 					<v-list-item-icon>
 						<v-icon>mdi-logout</v-icon>
 					</v-list-item-icon>
 					<v-list-item-title> Logout </v-list-item-title>
 				</v-list-item>
-				
 			</v-list>
 		</v-menu>
 	</v-app-bar>
 </template>
 
 <script>
+import store from './../store'
 export default {
 	// eslint-disable-next-line vue/multi-word-component-names
 	name: 'Header',
@@ -118,6 +118,11 @@ export default {
 				{ divider: true, inset: true },
 			],
 		}
+	},
+	computed: {
+		login() {
+			return store.state.login
+		},
 	},
 }
 </script>
