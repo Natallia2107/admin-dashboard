@@ -127,6 +127,6 @@ export default {
 	justify-content: center;
 }
 .color {
-	color: green;
+	color: green !important;
 }
 </style>
